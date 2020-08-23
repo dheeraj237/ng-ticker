@@ -1,0 +1,17 @@
+header {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 0.5em;
+    max-width: 50%;
+    .ticker-demo {
+        width: 100%;
+        border: 1px solid gray;
+    }
+
+    .mx-4 {
+        margin: 10px;
+    }
+}
