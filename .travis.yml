@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+    - '10'
+dist: trusty
+sudo: required
+branches:
+    only:
+        - master
+before_script:
+    - npm install -g @angular/cli
+script:
+    # - ng lint
+    # - npm run test-headless
+    - ng build --prod --base-href https://dheeraj237.github.io/ng-ticker/
+    - mv dist/web-app/index.html dist/web-app/404.html
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local_dir: dist/web-app
+    on:
+        branch: master
+notifications:
+    email:
+        recipients:
+            - dheerusuthar@gmail.com
+        on_success: always
+        on_failure: always
