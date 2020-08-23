@@ -8,8 +8,9 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "ticker:build": "ng build ng-ticker",
-        "ticker:publish": "ng build ng-ticker --prod && cd dist/ng-ticker && npm publish --registery hhtp://localhost:4873"
+        "ng-ticker:build": "ng build ng-ticker",
+        "verdaccio:publish": "ng build ng-ticker --prod && cd dist/ng-ticker && npm publish --registery hhtp://localhost:4873",
+        "ng-ticker:publish": "ng build ng-ticker --prod && cd dist/ng-ticker && npm publish"
     },
     "private": true,
     "dependencies": {
@@ -23,6 +24,7 @@
         "@angular/router": "~10.0.6",
         "g": "^2.0.1",
         "http-server": "^0.12.3",
+        "ng-ticker": "^1.0.0",
         "rxjs": "~6.5.5",
         "tslib": "^2.0.0",
         "verdaccio": "^4.8.1",

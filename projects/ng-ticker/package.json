@@ -8,5 +8,25 @@
     },
     "dependencies": {
         "tslib": "^2.0.0"
+    },
+    "description": "html marquee/ticker angular component library.",
+    "keywords": [
+        "angular",
+        "html-marquee",
+        "marquee",
+        "newsticker",
+        "ticker",
+        "tickertape",
+        "horizental animation"
+    ],
+    "author": "Dheeraj Suthar (http://dheeraj237.github.io/about/)",
+    "license": "Unlicense",
+    "homepage": "https://github.com/dheeraj237/ng-ticker",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dheeraj237/ng-ticker.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Albejr/ngx-newsticker/issues"
     }
 }
