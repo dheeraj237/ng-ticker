@@ -7,17 +7,11 @@ assignees: ''
 
 ---
 
-**Bug Description:**
-A clear and concise description of what the bug is.
+### Bug description:
 
-**To Reproduce:**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+### Link to minimally-working StackBlitz that reproduces the issue:
 
-Or StackBlitz Link
+You can fork [StackBlitz ](https://stackblitz.com/edit/ng-ticker-stackblitz?) and use it as a starting point.
 
 **Expected behavior:**
 A clear and concise description of what you expected to happen.
@@ -26,7 +20,7 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 ### Versions of Angular, ng-ticker:
-Angular:
+angular:
 ng-ticker:
 
 **Additional context**
