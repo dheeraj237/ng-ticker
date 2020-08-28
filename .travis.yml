@@ -2,15 +2,27 @@ language: node_js
 node_js:
     - '10'
 dist: trusty
-sudo: required
 branches:
     only:
         - master
+
+addons:
+    apt:
+        sources:
+            - google-chrome
+        packages:
+            - google-chrome-stable
+
+cache:
+    directories:
+        - ./node_modules
+
 before_script:
     - npm install -g @angular/cli
+
 script:
     - ng lint
-    - ng test
+    - ng test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
     - ng build --prod --base-href https://dheeraj237.github.io/ng-ticker/
     - mv dist/web-app/index.html dist/web-app/404.html
     - npm run lint-lib
@@ -19,22 +31,18 @@ script:
     - cp ./projects/ng-ticker/README.md README.md
 deploy:
     provider: pages
-    skip_cleanup: true
+    cleanup: false
     github_token: $GITHUB_TOKEN
     local_dir: dist/web-app
     on:
         branch: master
 
 git:
-  depth: 3
+    depth: 3
 
 after_success:
     - cd ./projects/ng-ticker/
     - npm run travis-deploy-once "npm run semantic-release"
-
-branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
 
 notifications:
     email:
