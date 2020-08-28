@@ -2,16 +2,17 @@ language: node_js
 node_js:
     - '10'
 dist: trusty
+sudo: required
 branches:
     only:
         - master
 
-addons:
-    apt:
-        sources:
-            - google-chrome
-        packages:
-            - google-chrome-stable
+# addons:
+#     apt:
+#         sources:
+#             - google-chrome
+#         packages:
+#             - google-chrome-stable
 
 cache:
     directories:
@@ -22,7 +23,7 @@ before_script:
 
 script:
     - ng lint
-    - ng test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+    # - ng test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
     - ng build --prod --base-href https://dheeraj237.github.io/ng-ticker/
     - mv dist/web-app/index.html dist/web-app/404.html
     - npm run lint-lib
