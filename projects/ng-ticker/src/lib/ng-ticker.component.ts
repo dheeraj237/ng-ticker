@@ -35,7 +35,7 @@ export class NgTickerComponent implements OnInit {
     this.renderer.setStyle(this.contentRef.nativeElement, 'animation-duration', this.speed);
     this.steps
       ? this.renderer.setStyle(this.contentRef.nativeElement, 'animation-timing-function', `steps(${this.steps}, jump-both)`)
-      : this.renderer.setStyle(this.contentRef.nativeElement, 'animation-timing-function', 'linear')
+      : this.renderer.setStyle(this.contentRef.nativeElement, 'animation-timing-function', 'linear');
   }
 
 }
