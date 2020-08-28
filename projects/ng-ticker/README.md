@@ -2,7 +2,7 @@
 
 html marquee implementation as angular component library.
 
-## Installation
+## Installation [npm](https://www.npmjs.com/package/ng-ticker)
 
 ```html
 $ npm install ng-ticker

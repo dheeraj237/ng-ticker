@@ -1,15 +1,14 @@
 {
     "name": "ng-ticker",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "peerDependencies": {
         "@angular/common": "^10.0.9",
-        "@angular/core": "^10.0.9",
-        "@rollup/plugin-commonjs": "^15.0.0"
+        "@angular/core": "^10.0.9"
     },
     "dependencies": {
         "tslib": "^2.0.0"
     },
-    "description": "html marquee/ticker angular component library.",
+    "description": "angular component library for html marquee/ticker",
     "keywords": [
         "angular",
         "html-marquee",
@@ -17,16 +16,17 @@
         "newsticker",
         "ticker",
         "tickertape",
-        "horizental animation"
+        "horizental animation",
+        "ng-ticker"
     ],
-    "author": "Dheeraj Suthar (http://dheeraj237.github.io/about/)",
-    "license": "Unlicense",
-    "homepage": "https://github.com/dheeraj237/ng-ticker",
+    "author": "Dheeraj (http://dheeraj237.github.io/about/)",
+    "license": "MIT",
+    "homepage": "https://dheeraj237.github.io/ng-ticker/",
     "repository": {
         "type": "git",
         "url": "https://github.com/dheeraj237/ng-ticker.git"
     },
     "bugs": {
-        "url": "https://github.com/Albejr/ngx-newsticker/issues"
+        "url": "https://github.com/dheeraj237/ng-ticker/issues"
     }
 }
