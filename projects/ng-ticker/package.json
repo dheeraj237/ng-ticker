@@ -1,6 +1,16 @@
 {
     "name": "ng-ticker",
     "version": "1.0.2",
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build",
+        "test": "ng test",
+        "lint": "ng lint",
+        "e2e": "ng e2e",
+        "travis-deploy-once": "travis-deploy-once --pro",
+        "semantic-release": "semantic-release"
+    },
     "peerDependencies": {
         "@angular/common": "^10.0.9",
         "@angular/core": "^10.0.9"
