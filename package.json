@@ -1,16 +1,37 @@
 {
     "name": "ng-ticker-angular",
-    "version": "1.0.0",
+    "version": "0.0.0-development",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",
+        "build:lib": "ng build ng-ticker --prod",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "ng-ticker:build": "ng build ng-ticker",
         "verdaccio:publish": "ng build ng-ticker --prod && cd dist/ng-ticker && npm publish --registery hhtp://localhost:4873",
-        "ng-ticker:publish": "ng build ng-ticker --prod && cd dist/ng-ticker && npm publish"
+        "ng-ticker:publish": "ng build ng-ticker --prod && cd dist/ng-ticker && npm publish",
+        "lint-lib": "ng lint ng-ticker",
+        "commit": "git-cz"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "",
+            "commit-msg": ""
+        }
+    },
+    "release": {
+        "pkgRoot": "dist/ng-ticker"
     },
     "private": true,
     "dependencies": {
@@ -27,7 +48,6 @@
         "ng-ticker": "^1.0.0",
         "rxjs": "~6.5.5",
         "tslib": "^2.0.0",
-        "verdaccio": "^4.8.1",
         "zone.js": "~0.10.3"
     },
     "devDependencies": {
@@ -35,10 +55,15 @@
         "@angular-devkit/build-ng-packagr": "~0.1000.6",
         "@angular/cli": "~10.0.5",
         "@angular/compiler-cli": "~10.0.6",
-        "@types/node": "^12.11.1",
+        "@commitlint/cli": "^9.1.2",
+        "@commitlint/config-conventional": "^9.1.2",
         "@types/jasmine": "~3.5.0",
         "@types/jasminewd2": "~2.0.3",
+        "@types/node": "^12.11.1",
         "codelyzer": "^6.0.0",
+        "cz-conventional-changelog": "^3.3.0",
+        "husky": "^4.2.5",
+        "install": "^0.13.0",
         "jasmine-core": "~3.5.0",
         "jasmine-spec-reporter": "~5.0.0",
         "karma": "~5.0.0",
@@ -48,6 +73,8 @@
         "karma-jasmine-html-reporter": "^1.5.0",
         "ng-packagr": "^10.0.0",
         "protractor": "~7.0.0",
+        "semantic-release": "^17.1.1",
+        "travis-deploy-once": "^5.0.11",
         "ts-node": "~8.3.0",
         "tslint": "~6.1.0",
         "typescript": "~3.9.5"
@@ -57,5 +84,9 @@
         "singleQuote": true,
         "bracketSpacing": true,
         "printWidth": 80
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dheeraj237/ng-ticker.git"
     }
 }

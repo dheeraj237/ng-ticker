@@ -1,15 +1,18 @@
 {
     "name": "ng-ticker",
-    "version": "1.0.1",
+    "version": "1.0.2",
+    "scripts": {
+        "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    },
     "peerDependencies": {
         "@angular/common": "^10.0.9",
         "@angular/core": "^10.0.9",
         "@rollup/plugin-commonjs": "^15.0.0"
     },
-    "dependencies": {
-        "tslib": "^2.0.0"
+    "release": {
+        "pkgRoot": "dist/ng-ticker"
     },
-    "description": "html marquee/ticker angular component library.",
+    "description": "angular component library for html marquee/ticker",
     "keywords": [
         "angular",
         "html-marquee",
@@ -27,6 +30,19 @@
         "url": "https://github.com/dheeraj237/ng-ticker.git"
     },
     "bugs": {
-        "url": "https://github.com/Albejr/ngx-newsticker/issues"
+        "url": "https://github.com/dheeraj237/ng-ticker/issues"
+    },
+    "devDependencies": {
+        "@angular/common": "^5.2.9",
+        "@angular/compiler": "^5.2.9",
+        "@angular/compiler-cli": "^5.2.9",
+        "@angular/core": "^5.2.9",
+        "copyfiles": "^1.2.0",
+        "ng-packagr": "2.4.2",
+        "rxjs": "^5.5.2",
+        "semantic-release": "^8.2.0",
+        "tsickle": "^0.26.0",
+        "typescript": "2.4.2",
+        "zone.js": "^0.8.4"
     }
 }
