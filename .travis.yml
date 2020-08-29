@@ -31,13 +31,8 @@ git:
     depth: 3
 
 after_success:
-<<<<<<< HEAD
     - cd dist/ng-ticker
     - npm run semantic-release
-=======
-    - cd ./projects/ng-ticker/
-    - npm run travis-deploy-once "npm run semantic-release"
->>>>>>> 55be7e5a098d36616b4aee1c51f2555b65340965
 
 notifications:
     email:
