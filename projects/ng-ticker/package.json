@@ -1,22 +1,15 @@
 {
     "name": "ng-ticker",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "scripts": {
-        "ng": "ng",
-        "start": "ng serve",
-        "build": "ng build",
-        "test": "ng test",
-        "lint": "ng lint",
-        "e2e": "ng e2e",
-        "travis-deploy-once": "travis-deploy-once --pro",
-        "semantic-release": "semantic-release"
+        "semantic-release": "semantic-release pre && npm publish && semantic-release post"
     },
     "peerDependencies": {
         "@angular/common": "^10.0.9",
         "@angular/core": "^10.0.9"
     },
-    "dependencies": {
-        "tslib": "^2.0.0"
+    "release": {
+        "pkgRoot": "dist/ng-ticker"
     },
     "description": "angular component library for html marquee/ticker",
     "keywords": [
@@ -38,5 +31,18 @@
     },
     "bugs": {
         "url": "https://github.com/dheeraj237/ng-ticker/issues"
+    },
+    "devDependencies": {
+        "@angular/common": "^5.2.9",
+        "@angular/compiler": "^5.2.9",
+        "@angular/compiler-cli": "^5.2.9",
+        "@angular/core": "^5.2.9",
+        "copyfiles": "^1.2.0",
+        "ng-packagr": "2.4.2",
+        "rxjs": "^5.5.2",
+        "semantic-release": "^8.2.0",
+        "tsickle": "^0.26.0",
+        "typescript": "2.4.2",
+        "zone.js": "^0.8.4"
     }
 }
