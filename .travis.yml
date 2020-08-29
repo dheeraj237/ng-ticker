@@ -15,24 +15,21 @@ script:
     # - ng test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
     - ng build --prod --base-href https://dheeraj237.github.io/ng-ticker/
     - mv dist/web-app/index.html dist/web-app/404.html
-    - npm run lint-lib
-    - npm run build:lib
     - rm README.md
     - cp ./projects/ng-ticker/README.md README.md
+    # - npm run lint-lib
+    # - npm run build:lib
 deploy:
     provider: pages
-    cleanup: false
     github_token: $GITHUB_TOKEN
     local_dir: dist/web-app
     on:
         branch: master
 
-git:
-    depth: 3
-
 after_success:
-    - cd ./projects/ng-ticker/
-    - npm run travis-deploy-once "npm run semantic-release"
+    # - npm version projects/ng-ticker minor
+    # - npm dist/ng-ticker publish
+    # - npm run semantic-release
 
 notifications:
     email:
