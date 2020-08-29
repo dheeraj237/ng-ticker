@@ -1,8 +1,12 @@
-header {
-    text-align: center;
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', 'Arial', sans-serif;
 }
 
 .container {
+    @media only screen and (max-width: 700px) {
+        max-width: 90%;
+    }
     margin: 0 auto;
     padding: 0 0.5em;
     max-width: 50%;

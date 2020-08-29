@@ -1,25 +1,23 @@
-<header>
-    <h1>🌈 NG-TICKER DEMO 🚀</h1>
-</header>
+<app-top-menu></app-top-menu>
 <div class="container">
     <!-- DIRECTION TICKER -->
     <h2>[direction]</h2>
     <h3>Left</h3>
     <div class="ticker-demo">
         <ng-ticker direction="left">
-            {{tickerEvents}}
+            {{ tickerEvents }}
         </ng-ticker>
     </div>
     <h3>Right</h3>
     <div class="ticker-demo">
         <ng-ticker direction="right">
-            {{tickerEvents}}
+            {{ tickerEvents }}
         </ng-ticker>
     </div>
     <h3>Alternate</h3>
     <div class="ticker-demo">
         <ng-ticker direction="alternate">
-            {{tickerEvents}}
+            {{ tickerEvents }}
         </ng-ticker>
     </div>
     <!-- SPEED TICKER -->
@@ -27,19 +25,19 @@
     <h3>Slow</h3>
     <div class="ticker-demo">
         <ng-ticker speed="20s">
-            {{tickerEvents}}
+            {{ tickerEvents }}
         </ng-ticker>
     </div>
     <h3>Normal</h3>
     <div class="ticker-demo">
         <ng-ticker speed="10s">
-            {{tickerEvents}}
+            {{ tickerEvents }}
         </ng-ticker>
     </div>
     <h3>Fast</h3>
     <div class="ticker-demo">
         <ng-ticker speed="5s">
-            {{tickerEvents}}
+            {{ tickerEvents }}
         </ng-ticker>
     </div>
     <!-- STEPS TICKER -->
@@ -47,13 +45,13 @@
     <h3>100 steps</h3>
     <div class="ticker-demo">
         <ng-ticker steps="100">
-            {{tickerEvents}}
+            {{ tickerEvents }}
         </ng-ticker>
     </div>
     <h3>50 steps</h3>
     <div class="ticker-demo">
         <ng-ticker steps="50">
-            {{tickerEvents}}
+            {{ tickerEvents }}
         </ng-ticker>
     </div>
 </div>

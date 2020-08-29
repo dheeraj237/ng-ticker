@@ -4,10 +4,12 @@ import { NgTickerModule } from 'ng-ticker';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TopMenuComponent } from './common/top-menu/top-menu.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopMenuComponent
   ],
   imports: [
     BrowserModule,
