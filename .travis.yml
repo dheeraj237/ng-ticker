@@ -32,7 +32,9 @@ git:
 
 after_success:
     - cd dist/ng-ticker
-    - npm run semantic-release
+    - npm version minor
+    - npm publish
+    # - npm run semantic-release
 
 notifications:
     email:
