@@ -33,7 +33,7 @@ export class NgTickerComponent implements OnInit {
   @Input() stopOnHover = false;
   /**
    * Set ticker animation transition play state [true, false]
-   * type: boolean 
+   * type: boolean
    */
   @Input() playState = true;
 

@@ -1,6 +1,6 @@
 {
     "name": "ng-ticker",
-    "version": "1.1.0",
+    "version": "2.1.0",
     "scripts": {
         "semantic-release": "semantic-release pre && npm publish && semantic-release post"
     },

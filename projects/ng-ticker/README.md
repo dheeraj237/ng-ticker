@@ -39,8 +39,8 @@ export class AppModule {}
 | [direction]   | optional | string  | 'left'  | Animation direction of content inside `ng-ticker` element                                                                     |
 | [speed]       | optional | string  | '10s'   | Speed of animation in direction in `seconds`. (speed need to be changed as width or content length on screen for better view) |
 | [steps]       | optional | string  | ''      | Steps in animation transition to make vintage effect.                                                                         |
-| [stopOnHover] | optional | boolean | false   | Stop ticker on hover                                                                                                          |
-| [playState]   | optional | boolean | true    | Defines play state of ticker content                                                                                          |
+| [stopOnHover] | optional | Boolean | false   | Stop ticker on hover                                                                                                          |
+| [playState]   | optional | Boolean | true    | Defines play state of ticker content                                                                                          |
 
 ## Styling guide
 

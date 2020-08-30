@@ -48,6 +48,14 @@ $header-height: 30px;
         display: flex;
         flex-flow: row nowrap;
 
+        .npm-logo {
+            margin-right: 10px;
+            img {
+                filter: invert(1);
+                transform: scale(2);
+            }
+        }
+
         li {
             width: 21px;
             height: 21px;
