@@ -31,10 +31,11 @@ $header-height: 30px;
     &-title {
         color: white;
         text-decoration: none;
+        margin: auto;
     }
 
     &-info {
-        margin-left: auto;
+        // margin-left: auto;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;

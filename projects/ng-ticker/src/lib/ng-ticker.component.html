@@ -1,5 +1,8 @@
-<div class="ticker-container">
-    <span #content>
-        <ng-content></ng-content>
-    </span>
+<div class="ticker-container" [ngClass]="{
+    'stop-on-hover': stopOnHover,
+    'play-state-on': playState
+  }">
+  <span #content>
+    <ng-content></ng-content>
+  </span>
 </div>

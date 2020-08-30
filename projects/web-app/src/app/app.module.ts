@@ -5,6 +5,7 @@ import { NgTickerModule } from 'ng-ticker';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopMenuComponent } from './common/top-menu/top-menu.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TopMenuComponent } from './common/top-menu/top-menu.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgTickerModule
+    NgTickerModule,
+    CommonModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

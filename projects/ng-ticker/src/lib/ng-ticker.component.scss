@@ -16,10 +16,21 @@
         position: relative;
         display: inline-block;
         animation-iteration-count: infinite;
+        animation-play-state: paused;
     }
 
     span {
         animation-name: tickerX;
+    }
+
+    /* Pause animation on hover */
+    &.stop-on-hover:hover > span {
+        animation-play-state: paused;
+    }
+
+    /* play state */
+    &.play-state-on > span {
+        animation-play-state: running;
     }
 
     @-webkit-keyframes tickerX {

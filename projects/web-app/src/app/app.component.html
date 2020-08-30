@@ -54,4 +54,22 @@
             {{ tickerEvents }}
         </ng-ticker>
     </div>
+
+    <!-- STOP ON HOVER -->
+    <h2>[stopOnHover]</h2>
+    <h3>stopOnHover = true</h3>
+    <div class="ticker-demo">
+        <ng-ticker [stopOnHover]="true">
+            {{ tickerEvents }}
+        </ng-ticker>
+    </div>
+    <!-- PLAY STATE -->
+    <h2>[playState]</h2>
+    <button class="btn mb-1" [style.background-color]="playState ? 'green': 'red'" (click)="playState = !playState">Play
+        State: {{playState ? 'On': 'Off'}}</button>
+    <div class="ticker-demo">
+        <ng-ticker [playState]="playState">
+            {{ tickerEvents }}
+        </ng-ticker>
+    </div>
 </div>

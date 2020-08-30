@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'web-app';
   tickerEvents = '⭐ ng-ticker sample text example. 🚀';
+  playState = true;
 }
