@@ -31,10 +31,11 @@ $header-height: 30px;
     &-title {
         color: white;
         text-decoration: none;
+        margin: auto;
     }
 
     &-info {
-        margin-left: auto;
+        // margin-left: auto;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
@@ -46,6 +47,14 @@ $header-height: 30px;
         list-style: none;
         display: flex;
         flex-flow: row nowrap;
+
+        .npm-logo {
+            margin-right: 10px;
+            img {
+                filter: invert(1);
+                transform: scale(2);
+            }
+        }
 
         li {
             width: 21px;

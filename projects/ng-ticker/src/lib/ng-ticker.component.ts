@@ -11,11 +11,31 @@ export class NgTickerComponent implements OnInit {
 
   @ViewChild('content', { static: true }) contentRef: ElementRef;
 
+  /**
+   * Defines direction of ticker content. [left, right, alternate]
+   * type: string
+   */
   @Input() direction = 'left';
-
+  /**
+   * Defines speed of ticker content. [time in seconds, miliseconds]
+   * type: time in string
+   */
   @Input() speed = '10s';
-
+  /**
+   * Add steps to complete animation in direction [steps]
+   * type: number
+   */
   @Input() steps: string;
+  /**
+   * Defines whether ticker stop on hover. [true, false]
+   * type: boolean
+   */
+  @Input() stopOnHover = false;
+  /**
+   * Set ticker animation transition play state [true, false]
+   * type: boolean
+   */
+  @Input() playState = true;
 
   directions = {
     left: 'normal',

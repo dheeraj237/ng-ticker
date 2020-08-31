@@ -1,5 +1,9 @@
 # NG-Ticker
 
+[![Build Status](https://travis-ci.com/dheeraj237/ng-ticker.svg?branch=master)](https://travis-ci.com/dheeraj237/ng-ticker)
+![npm](https://img.shields.io/npm/dw/ng-ticker)
+![GitHub stars](https://img.shields.io/github/stars/dheeraj237/ng-ticker?style=social)
+
 html marquee implementation as angular component library.
 
 ## Installation [npm](https://www.npmjs.com/package/ng-ticker)
@@ -30,11 +34,13 @@ export class AppModule {}
 
 ### Options
 
-| Name        |          | Type   | Default | Description                                                                                                                   |
-| ----------- | -------- | ------ | ------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| [direction] | optional | string | 'left'  | animation direction of content inside `ng-ticker` element                                                                     |
-| [speed]     | optional | string | '10s'   | speed of animation in direction in `seconds`. (speed need to be changed as width or content length on screen for better view) |
-| [steps]     | optional | string | ''      | steps in animation transition to make vintage effect.                                                                         |
+| Name          |          | Type    | Default | Description                                                                                                                   |
+| ------------- | -------- | ------- | ------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| [direction]   | optional | string  | 'left'  | Animation direction of content inside `ng-ticker` element                                                                     |
+| [speed]       | optional | string  | '10s'   | Speed of animation in direction in `seconds`. (speed need to be changed as width or content length on screen for better view) |
+| [steps]       | optional | string  | ''      | Steps in animation transition to make vintage effect.                                                                         |
+| [stopOnHover] | optional | Boolean | false   | Stop ticker on hover                                                                                                          |
+| [playState]   | optional | Boolean | true    | Defines play state of ticker content                                                                                          |
 
 ## Styling guide
 
@@ -43,6 +49,6 @@ There are several classes that help you to create your custom styles
 
 ```css
 :host ::ng-deep .ticker-container > span {
-    // any style properties.
+    // css properties.
 }
 ```
