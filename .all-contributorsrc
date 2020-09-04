@@ -1,0 +1,26 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "dheeraj237",
+      "name": "dheeraj237",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/20186834?v=4",
+      "profile": "https://dheeraj237.github.io/about/",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "ng-ticker",
+  "projectOwner": "dheeraj237",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
