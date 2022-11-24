@@ -3,7 +3,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-[![Build Status](https://app.travis-ci.com/dheeraj237/ng-ticker.svg?branch=master)](https://app.travis-ci.com/dheeraj237/ng-ticker)
+[![Node.js CI](https://github.com/dheeraj237/ng-ticker/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/dheeraj237/ng-ticker/actions/workflows/node.js.yml)
 ![npm](https://img.shields.io/npm/dw/ng-ticker)
 ![GitHub stars](https://img.shields.io/github/stars/dheeraj237/ng-ticker?style=social)
 
